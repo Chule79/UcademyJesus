@@ -1,0 +1,88 @@
+.panelInicio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.panelInicio img{
+    width: 385.59px;
+    height: 82.87px;
+}
+
+.formInicio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divName{
+    
+    line-height: 22px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.formOpciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.inputsInicio{
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.fa-eye{
+    margin-left: -30px; 
+    cursor: pointer;
+  }
+
+
+  .asterisco{
+    color:#FB5A5A;
+  }
+
+  .check{
+    background: #FFFFFF;
+    border-radius: 2px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+  }
+
+  .rememberMe{
+    display: flex;
+    gap: 1rem;
+  }
+
+ .olvide{
+    color: #9E9E9E ;
+ }
+
+ .botonInic{
+    width: 121px;
+    height: 30px;
+    padding: 4px 15px;
+    background: #262D34;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 8px;
+    color: #DBDBDB;
+    border: none;
+ }
