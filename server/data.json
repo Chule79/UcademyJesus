@@ -1,6 +1,14 @@
 {
   "alumnos": [
-    
+    {
+      "id":1,
+      "state": "Offline",
+      "surname": "Jesús Santos López",
+      "name": "chule799",
+      "email": "jsantoslopez99@gmail.com",
+      "movil": 688918418
+
+    }
   ],
   "cursos": [
     

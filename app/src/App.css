@@ -1,15 +1,18 @@
 @font-face {
   font-family: Montserrat;
-  src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  src: url(./assets/fonts/Montserrat/static/Montserrat-Light.ttf);
   font-display: block;
 }
-
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+  font-display: block;
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat;
 }
 
 .App{

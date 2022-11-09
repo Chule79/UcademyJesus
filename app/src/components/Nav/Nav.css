@@ -1,0 +1,72 @@
+.navLateral{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    align-items: center;
+    padding: 2rem 0rem;
+    justify-content: space-between;
+    height: 89vh;
+    font-family: Poppins;
+}
+
+.principalesBtn{
+    width: 180px;
+    height: 50px;
+    background-color:#FFFFFF;
+    border: 0px;
+    border-radius: 8px; 
+    font-size: 11px;
+    line-height: 22px;
+    text-align: start;
+    padding-left: 1rem;
+    color: black;
+    
+}
+
+.selectBtn{
+    border: 1px solid #DBDBDB;
+}
+.navFuncional{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    align-items: center;
+   
+}
+
+.subNavi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    text-decoration: none;
+}
+.miniNav{
+    width: 160px;
+    display: flex;
+    justify-content: end;
+}
+
+.subNavi a{
+    text-decoration: none;
+}
+
+.principalesBtn h2{
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.principalesBtn img{
+    width: 30px;
+}
+.study{
+    color:#0ABB87 ;
+}
+.noFuntion{
+    color: black;
+}
