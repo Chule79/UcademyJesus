@@ -1,0 +1,127 @@
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vW;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8;
+}
+
+
+.ticket {
+    background-color:#ffffff;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-items: center;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .ticket > .header {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .close {
+    font-size: 17px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cfcece;
+    width: 77px;
+    height: 32px;
+  }
+ 
+  .opcionesBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .editarUsu{
+    background-color: #262D34;
+    border-radius: 8px;
+    width: 151px;
+    height: 32px;
+    color: #ffffff;
+  }
+
+
+  .perfilCurso{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .perfilCurso button{
+    background-color: #ffffff;
+    border: 0;
+    border-bottom: #0ABB87 3px solid;
+  }
+
+
+  .divClose{
+    display: flex;
+    justify-content: end;
+  }
+
+  .mountainImg{
+    width: 51px; 
+  }
+  
+  .mountainDiv{
+    width: 138px;
+    height: 138px;
+    border: 1px solid #cfcece;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dataUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .todoDatos{
+    border: #262D34 solid;
+    width: 360px;
+  }
+
+  .todoDatos img{
+    width: 16px;
+  }
+
+  .nombres{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 352px;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+  }
+
+  .cajaNom{
+    border-bottom: 1px solid black;
+    width: 320px;
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .cajaNick{
+    width: 320px;
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }

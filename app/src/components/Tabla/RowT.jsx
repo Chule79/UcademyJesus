@@ -1,28 +1,38 @@
 import React, { useEffect, useState } from 'react';
 
 import { getData } from '../../api/api';
+import { PopCreate } from '../Popup/Popup';
 
 const RowT = () => {
   const [usuario, setUsuario] = useState([]);
   useEffect(() => {
     (async () => {
-        const data = await getData();
-        setUsuario(data);
-      })();
+      const data = await getData();
+      setUsuario(data);
+    })();
   }, []);
 
   return (
-    <div>
+    <>
       {usuario.length ? (
         usuario.map((item) => (
-            <figure key={item.id}>
-              <h2>{item.name}</h2>
-            </figure>
-          ))
-        ) : (
-          <p>No existe el Chiste que busca 😢</p>
-        )}
-    </div>
+          <tr className="rowLine" key={item.id}>
+            <td className="datos">
+              <button>{item.state}</button>
+            </td>
+            <td className="datos">{item.surname}</td>
+            <td className="datos">{item.name}</td>
+            <td className="datos">{item.email}</td>
+            <td className="datos">{item.movil}</td>
+            <td className="datos">
+              <PopCreate item={item}/>
+            </td>
+          </tr>
+        ))
+      ) : (
+        <p>No existe el Chiste que busca 😢</p>
+      )}
+    </>
   );
 };
 

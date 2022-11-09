@@ -13,14 +13,14 @@ function Tabla() {
       </button>
       <table>
         <tr className="titulosTabla">
-          <th className="titulo">Conexión</th>
-          <th className="titulo">Nombre y apellidos</th>
-          <th className="titulo">Nombre de usuario</th>
-          <th className="titulo">Email</th>
-          <th className="titulo">Móvil</th>
+          <th className="datos">Conexión</th>
+          <th className="datos">Nombre y apellidos</th>
+          <th className="datos">Nombre de usuario</th>
+          <th className="datos">Email</th>
+          <th className="datos">Móvil</th>
         </tr>
+        <RowT />
       </table>
-      <RowT />
     </div>
   );
 }

@@ -17,29 +17,53 @@
 }
 
 .tablon{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 80vw;
+    width: 70vw;
     padding: 2rem 0rem;
     height: 89vh;
     font-family: Poppins;
     align-content: flex-start;
 }
 
+.datos{
+    font-family: 'Montserrat';
+    width: 260px;
+    overflow: scroll;
+    text-align: center;  
+    padding: 20px 0rem 1rem 1rem;
+    color: black;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
 .titulosTabla{
+    font-family: 'Poppins';
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10%; 
 }
 
-.titulo{
-    text-align: center;
-    padding: 0px 20px;
-}
 
 table{
     width: 100%;
+}
+
+.rowLine{
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;   
+}
+
+.datos button{
+    width: 60px;
+    height: 24px;
+
+}
+ button img{
+    width: 20px;
+}
+
+.informacion{
+    border: 0;
+    background-color: transparent;
 }
