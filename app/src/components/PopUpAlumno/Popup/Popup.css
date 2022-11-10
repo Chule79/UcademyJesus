@@ -4,8 +4,7 @@
   justify-content: center;
   width: 100vW;
   height: 100vh;
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -19,6 +18,7 @@
     gap: 1rem;
     border: 1px solid black;
     border-radius: 8px;
+    
   }
   .ticket > .header {
     width: 100%;
@@ -57,12 +57,16 @@
     gap: 1rem;
   }
 
-  .perfilCurso button{
+  .noselect{
+    background-color: #ffffff;
+    border: 0;}
+
+  .selected{
     background-color: #ffffff;
     border: 0;
-    border-bottom: #0ABB87 3px solid;
+    border-bottom: #0ABB87 4px solid;
+    font-family: MontserratBold;
   }
-
 
   .divClose{
     display: flex;
@@ -91,8 +95,9 @@
   }
 
   .todoDatos{
-    border: #262D34 solid;
     width: 360px;
+    display: flex;
+    flex-direction: column;
   }
 
   .todoDatos img{
@@ -106,6 +111,7 @@
     width: 352px;
     border-bottom: 1px solid black;
     padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .cajaNom{
@@ -115,13 +121,25 @@
     gap: 0.2rem;
     flex-direction: column;
     padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 
-  .cajaNick{
-    width: 320px;
-    display: flex;
-    gap: 0.2rem;
-    flex-direction: column;
+ .datoApi{
+  padding-top: 3px;
+  font-size: 14px;
+  font-family: Montserrat;
+ }
+
+ .tituloDato{
+  font-family: MontserratBold;
+  font-size: 11px;
+ }
+
+ .fecha{
+  display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 352px;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+ }

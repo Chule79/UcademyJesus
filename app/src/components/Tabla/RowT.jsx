@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { getData } from '../../api/api';
-import { PopCreate } from '../Popup/Popup';
+import { PopCreate } from '../PopUpAlumno/Popup/Popup';
 
 const RowT = () => {
   const [usuario, setUsuario] = useState([]);
@@ -30,7 +30,7 @@ const RowT = () => {
           </tr>
         ))
       ) : (
-        <p>No existe el Chiste que busca 😢</p>
+        <p>No hay Alumnos Registrados</p>
       )}
     </>
   );

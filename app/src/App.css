@@ -4,6 +4,11 @@
   font-display: block;
 }
 @font-face {
+  font-family: MontserratBold;
+  src: url(./assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+  font-display: block;
+}
+@font-face {
   font-family: Poppins;
   src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
   font-display: block;

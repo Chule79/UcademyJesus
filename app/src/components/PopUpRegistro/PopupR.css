@@ -1,0 +1,56 @@
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vW;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.ticketRe{
+    background-color:#ffffff;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-items: center;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    align-items: center;
+  }
+ 
+  .close {
+    font-size: 17px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cfcece;
+    width: 77px;
+    height: 32px;
+  }
+ 
+
+  .campoUnico{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .formRegister{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 340px;
+    font-family: Montserrat;
+    font-size: 11px;
+    gap: 2rem;
+  }
+  .cajaIn{
+    height: 30px;
+  }
+  .campoDoble{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
