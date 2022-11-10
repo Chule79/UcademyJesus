@@ -1,13 +1,11 @@
 import './Popup.css';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 
 import DatosPop from '../BodyPop/DatosPop';
 
-
 export const PopCreate = ({ item }) => {
-
   return (
     <Popup
       trigger={
@@ -20,7 +18,6 @@ export const PopCreate = ({ item }) => {
       {(close) => (
         <div className="modal">
           <div className="ticket">
-      
             <DatosPop item={item} />
             <div className="divClose">
               <button className="close" onClick={close}>
