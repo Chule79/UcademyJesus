@@ -3,7 +3,7 @@
     {
       "id": "b3fa9db0-4517-4777-9bc6-f599d3946b89",
       "state": "Offline",
-      "surname": "Jesús Santos López",
+      "surname": "Jesús Santos Lòpez ",
       "name": "Chule799",
       "email": "jsantoslopez99@gmail.com",
       "movil": "688918418",
@@ -13,7 +13,7 @@
       "id": "b3fa9db0-4517-4777-9bc6-f599d3946b25",
       "state": "Online",
       "surname": "Claudia Sanchez Fernandez",
-      "name": "ClauOby",
+      "name": "sad",
       "email": "claudiaoby@gmail.com",
       "movil": "688212356",
       "date": "21/06/2009"
@@ -28,5 +28,42 @@
       "date": "10/11/2022"
     }
   ],
-  "cursos": []
+  "cursos": [
+    {
+      "id": "b3fa9db0-4517-4777-9bc6-f599d3946b45",
+      "name": "Maquetación",
+      "value": 70,
+      "date": "14/01/2020"
+    },
+    {
+      "id": "b3fa9db0-4517-4777-9bc6-f599d35446b45",
+      "name": "Base de datos",
+      "value": 50,
+      "date": "14/01/2020"
+    },
+    {
+      "id": "b3fa9db0-4517-4777-9bc6-f52343946b45",
+      "name": "Sistemas",
+      "value": 89,
+      "date": "14/01/2020"
+    },
+    {
+      "id": "b3fa9db0-4517-4777-9bc6-f595d3946b45",
+      "name": "Redes",
+      "value": 45,
+      "date": "14/01/2020"
+    },
+    {
+      "id": "b3fa9db0-4517-4777-9bc6-f799d3946b45",
+      "name": "Ofimatica",
+      "value": 27,
+      "date": "14/01/2020"
+    },
+    {
+      "id": "b3fa9db0-4517-4777-9bc6-f59956946b45",
+      "name": "Seguridad",
+      "value": 5,
+      "date": "14/01/2020"
+    }
+  ]
 }

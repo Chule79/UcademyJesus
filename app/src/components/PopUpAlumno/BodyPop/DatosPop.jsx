@@ -1,21 +1,22 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 
+import CursoPop from './CursoPop';
+
 const DatosPop = ({ item }) => {
   const [variant, setVariant] = useState('datos');
   const [name, setName] = useState(item.name);
-  const [state, setState] = useState(item.state);
+
   const [surname, setSurname] = useState(item.surname);
+  const [surname2, setSurname2] = useState('');
   const [email, setEmail] = useState(item.email);
   const [movil, setMovil] = useState(item.movil);
 
   const createAlumn = (ev) => {
-    ev.preventDefault();
     const alumn = {
       ...item,
-      state: state,
       name: name,
-      surname: surname,
+      surname: `${surname} ${surname2} `,
       email: email,
       movil: movil,
     };
@@ -27,7 +28,7 @@ const DatosPop = ({ item }) => {
     console.log(item);
     axios({
       method: 'put',
-      url: 'http://localhost:8080/alumnos',
+      url: `http://localhost:8080/alumnos/${item.id}`,
       data: item,
     });
   };
@@ -41,7 +42,9 @@ const DatosPop = ({ item }) => {
               Cursos
             </button>
           </div>
-          <button className="editarUsu">Editar estudiante</button>
+          <button className="editarUsu" onClick={(ev) => setVariant('edit')}>
+            Editar estudiante
+          </button>
         </div>
         <div className="dataUser">
           <div className="mountainDiv">
@@ -90,61 +93,68 @@ const DatosPop = ({ item }) => {
       </>
     );
   }
-  if (variant == 'curso') {
+  if (variant == 'edit') {
     return (
       <>
-        <div className="opcionesBtn">
-          <div className="perfilCurso">
-            <button className="noselect" onClick={(ev) => setVariant('datos')}>
-              Perfil
-            </button>
-            <button className="selected">Cursos</button>
+        <form onSubmit={(ev) => createAlumn(ev)} className="formEdit">
+          <div className="opcionesBtn">
+            <div className="perfilCurso">
+              <button className="selected" onClick={(ev) => setVariant('datos')}>
+                Perfil
+              </button>
+              <button className="noselect" onClick={(ev) => setVariant('curso')}>
+                Cursos
+              </button>
+            </div>
+            <div className="cancelBtn">
+              <button className="close" onClick={(ev) => setVariant('datos')}>
+                Cancelar edición
+              </button>
+              <input type="submit" value="Guardar" className="saveBtn" />
+            </div>
           </div>
-          <button className="editarUsu">Editar estudiante</button>
-        </div>
-        <form onSubmit={(ev) => createAlumn(ev)} className="formRegister">
-          <div className="campoUnico">
-            <label htmlFor="username">Nombre y apellidos:</label>
-            <input
-              className="cajaIn"
-              type="text"
-              name="username"
-              id="username"
-              onChange={(ev) => setSurname(ev.target.value)}
-            />
-          </div>
-          <div className="campoUnico">
-            <label htmlFor="name">NickName: </label>
-            <input
-              className="cajaIn"
-              type="text"
-              name="name"
-              id="name"
-              onChange={(ev) => setName(ev.target.value)}
-            />
-          </div>
-          <div className="campoUnico">
-            <label htmlFor="email">Email:</label>
-            <input
-              className="cajaIn"
-              type="text"
-              name="email"
-              id="email"
-              onChange={(ev) => setEmail(ev.target.value)}
-            />
-          </div>
-          <div className="campoDoble">
+          <div className="cuerpoForm">
+            <div className="campoDoble">
+              <div className="campoUnico">
+                <label htmlFor="username">Nombre:</label>
+                <input
+                  className="cajaIn"
+                  type="text"
+                  name="username"
+                  id="username"
+                  onChange={(ev) => setSurname(ev.target.value)}
+                />
+              </div>
+              <div className="campoUnico">
+                <label htmlFor="username">Apellidos:</label>
+                <input
+                  className="cajaIn"
+                  type="text"
+                  name="username"
+                  id="username"
+                  onChange={(ev) => setSurname2(ev.target.value)}
+                />
+              </div>
+            </div>
             <div className="campoUnico">
-              <label htmlFor="state">Estado:</label>
-              <select
+              <label htmlFor="name">NickName: </label>
+              <input
                 className="cajaIn"
-                name="type"
-                id="type"
-                onChange={(ev) => setState(ev.target.value)}
-              >
-                <option value="Offline">Offline</option>
-                <option value="Online">Online</option>
-              </select>
+                type="text"
+                name="name"
+                id="name"
+                onChange={(ev) => setName(ev.target.value)}
+              />
+            </div>
+            <div className="campoUnico">
+              <label htmlFor="email">Email:</label>
+              <input
+                className="cajaIn"
+                type="text"
+                name="email"
+                id="email"
+                onChange={(ev) => setEmail(ev.target.value)}
+              />
             </div>
             <div className="campoUnico">
               <label htmlFor="movil">Movil:</label>
@@ -157,9 +167,24 @@ const DatosPop = ({ item }) => {
               />
             </div>
           </div>
-
-          <input type="submit" value="Guardar" />
         </form>
+      </>
+    );
+  }
+  if (variant == 'curso') {
+    return (
+      <>
+        <div className="opcionesBtn">
+          <div className="perfilCurso">
+            <button className="noselect" onClick={(ev) => setVariant('datos')}>
+              Perfil
+            </button>
+            <button className="selected">Cursos</button>
+          </div>
+        </div>
+        <div className="dataUser">
+          <CursoPop />
+        </div>
       </>
     );
   }

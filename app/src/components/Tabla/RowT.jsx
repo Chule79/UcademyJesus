@@ -7,7 +7,7 @@ const RowT = () => {
   const [usuario, setUsuario] = useState([]);
   useEffect(() => {
     (async () => {
-      const data = await getData();
+      const data = await getData("alumnos");
       setUsuario(data);
     })();
   }, []);
@@ -25,12 +25,12 @@ const RowT = () => {
             <td className="datos">{item.email}</td>
             <td className="datos">{item.movil}</td>
             <td className="datos">
-              <PopCreate item={item}/>
+              <PopCreate item={item} />
             </td>
           </tr>
         ))
       ) : (
-        <p>No hay Alumnos Registrados</p>
+        <p>Loading ...</p>
       )}
     </>
   );
